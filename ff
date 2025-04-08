@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EthioReads - Ethiopia's Premier Online Bookstore</title>
+    <style>
+        /* Enhanced Ethiopian Color Palette with Pink Accents */
+        :root {
+            --ethio-green: #078b3e;
+            --ethio-yellow: #f9e44a;
+            --ethio-red: #da121a;
+            --ethio-blue: #0f47af;
+            --ethio-pink: #ff6b9e;
+            --light-bg: #f8f9fa;
+            --dark-text: #333;
+            --medium-text: #555;
+            --light-text: #777;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--ethio-green);
+            color: var(--ethio-yellow);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: var(--ethio-yellow);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        nav ul li a:hover {
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        /* Book title styles - removed underline */
+        .book-title, .audio-title {
+            text-decoration: none !important;
+        }
+        
+        /* Genre Pages Styles */
+        .genre-page {
+            margin: 2rem 0;
+        }
+        
+        .genre-header {
+            background-color: var(--ethio-green);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .genre-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .genre-description {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="EthioReads Logo">
+                EthioReads
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#bestsellers">Bestsellers</a></li>
+                    <li><a href="index.html#audiobooks">Audiobooks</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Fiction Genre Page -->
+        <div id="fiction-page" class="genre-page">
+            <div class="genre-header">
+                <h1>Fiction</h1>
+                <p class="genre-description">
+                    Explore Ethiopia's rich storytelling tradition through our collection of fictional works. 
+                    From historical epics to contemporary novels, discover stories that capture the Ethiopian experience.
+                </p>
+            </div>
+            
+            <div class="book-grid">
+                <!-- The Shadow King -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/81XQ7+g0H4L.jpg" alt="The Shadow King">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">The Shadow King</div>
+                        <div class="book-author">Maaza Mengiste</div>
+                        <div class="book-price">320 ETB</div>
+                        <div class="book-actions">
+                            <a href="shadow-king.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dertogada -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/4144YQ8F6HL._SX311_BO1,204,203,200_.jpg" alt="ከአድማስ ባሻገር">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">ከአድማስ ባሻገር</div>
+                        <div class="book-author">Bealu Girma</div>
+                        <div class="book-price">180 ETB</div>
+                        <div class="book-actions">
+                            <a href="dertogada.html" class="btn small-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Biography Genre Page -->
+    <div id="biography-page" class="genre-page">
+        <div class="genre-header" style="background-color: var(--ethio-blue);">
+            <h1>Biography</h1>
+            <p class="genre-description">
+                Discover the lives of remarkable Ethiopians through these captivating biographies. 
+                From historical figures to modern influencers, learn about their journeys and achievements.
+            </p>
+        </div>
+        
+        <div class="book-grid">
+            <!-- Notes from the Hyena's Belly -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51Y5ZJZJZJL.jpg" alt="Notes from the Hyena's Belly">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Notes from the Hyena's Belly</div>
+                    <div class="book-author">Nega Mezlekia</div>
+                    <div class="book-price">240 ETB</div>
+                    <div class="book-actions">
+                        <a href="hyenas-belly.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- The Hospital by the River -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/51K5Z+5Y5GL.jpg" alt="The Hospital by the River">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Hospital by the River</div>
+                    <div class="book-author">Catherine Hamlin</div>
+                    <div class="book-price">260 ETB</div>
+                    <div class="book-actions">
+                        <a href="hospital-river.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poetry Genre Page -->
+    <div id="poetry-page" class="genre-page">
+        <div class="genre-header" style="background-color: var(--ethio-pink);">
+            <h1>Poetry</h1>
+            <p class="genre-description">
+                Experience the beauty of Ethiopian poetry in Amharic and English. 
+                These collections showcase the lyrical richness of Ethiopian literary tradition.
+            </p>
+        </div>
+        
+        <div class="book-grid">
+            <!-- Soul Talk -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/51Y5ZJZJZJL.jpg" alt="Soul Talk">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Soul Talk</div>
+                    <div class="book-author">Alemayehu Gebrehiwot</div>
+                    <div class="book-price">180 ETB</div>
+                    <div class="book-actions">
+                        <a href="soul-talk.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Poems of the Ethiopian Millennium -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51Y5ZJZJZJL._SY425_.jpg" alt="Poems of the Ethiopian Millennium">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Poems of the Ethiopian Millennium</div>
+                    <div class="book-author">Various Authors</div>
+                    <div class="book-price">200 ETB</div>
+                    <div class="book-actions">
+                        <a href="millennium-poems.html" class="btn small-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>EthioReads</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">
+                        Ethiopia's premier online bookstore, offering a wide selection of books and audiobooks from Ethiopian authors and publishers.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="poetry.html">Poetry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 EthioReads. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

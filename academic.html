@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Books - EthioReads</title>
+    <style>
+            :root {
+        --ethio-green: #078b3e;
+        --ethio-yellow: #f9e44a;
+        --ethio-red: #da121a;
+        --ethio-blue: #0f47af;
+        --ethio-pink: #ff6b9e;
+        --light-bg: #f8f9fa;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: var(--ethio-green);
+        color: var(--ethio-yellow);
+        padding: 1rem 0;
+    }
+    
+
+    
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    
+    .book-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .book-cover img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .book-info {
+        padding: 1rem;
+    }
+    
+    .book-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--ethio-green);
+        text-decoration: none;
+    }
+    
+    .book-author {
+        color: #666;
+    }
+    
+    .book-price {
+        color: var(--ethio-red);
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: var(--ethio-green);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+        .genre-header {
+            background-color: #6A5ACD; /* Slate blue for academic */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EthioReads</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="genre-header">
+            <h1>Academic Books</h1>
+            <p>Scholarly works on Ethiopian studies</p>
+        </div>
+        
+        <div class="book-grid">
+            <!-- Development and Change in Ethiopia -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41J5ZJZJZJL.jpg" alt="Development and Change in Ethiopia">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Development and Change in Ethiopia</div>
+                    <div class="book-author">Various Authors</div>
+                    <div class="book-price">350 ETB</div>
+                    <a href="development-ethiopia.html" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Ethiopian Geography -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/51Y5ZJZJZJL.jpg" alt="Ethiopian Geography">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Ethiopian Geography</div>
+                    <div class="book-author">Mesfin Wolde Mariam</div>
+                    <div class="book-price">300 ETB</div>
+                    <a href="ethiopian-geography.html" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Politics and Language in Ethiopia -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51Y5ZJZJZJL._SY425_.jpg" alt="Politics and Language in Ethiopia">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Politics and Language in Ethiopia</div>
+                    <div class="book-author">Mauro Tosco</div>
+                    <div class="book-price">320 ETB</div>
+                    <a href="politics-language.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

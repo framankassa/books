@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography - EthioReads</title>
+    <style>
+       
+    :root {
+        --ethio-green: #078b3e;
+        --ethio-yellow: #f9e44a;
+        --ethio-red: #da121a;
+        --ethio-blue: #0f47af;
+        --ethio-pink: #ff6b9e;
+        --light-bg: #f8f9fa;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: var(--ethio-green);
+        color: var(--ethio-yellow);
+        padding: 1rem 0;
+    }
+    
+
+    
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+    
+    .book-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .book-cover img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .book-info {
+        padding: 1rem;
+    }
+    
+    .book-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--ethio-green);
+        text-decoration: none;
+    }
+    
+    .book-author {
+        color: #666;
+    }
+    
+    .book-price {
+        color: var(--ethio-red);
+        font-weight: bold;
+        margin: 0.5rem 0;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: var(--ethio-green);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+        .genre-header {
+            background-color: var(--ethio-blue);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>EthioReads</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="genre-header">
+            <h1>Biographies</h1>
+            <p>Remarkable lives of Ethiopian figures</p>
+        </div>
+        
+        <div class="book-grid">
+            <!-- Notes from the Hyena's Belly -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51Y5ZJZJZJL.jpg" alt="Notes from the Hyena's Belly">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Notes from the Hyena's Belly</div>
+                    <div class="book-author">Nega Mezlekia</div>
+                    <div class="book-price">240 ETB</div>
+                    <a href="hyenas-belly.html" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            <!-- The Hospital by the River -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/51K5Z+5Y5GL.jpg" alt="The Hospital by the River">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">The Hospital by the River</div>
+                    <div class="book-author">Catherine Hamlin</div>
+                    <div class="book-price">260 ETB</div>
+                    <a href="hospital-river.html" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Emperor Haile Selassie -->
+            <div class="book-card">
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41J5ZJZJZJL.jpg" alt="Emperor Haile Selassie">
+                </div>
+                <div class="book-info">
+                    <div class="book-title">Emperor Haile Selassie</div>
+                    <div class="book-author">Ryszard Kapuściński</div>
+                    <div class="book-price">280 ETB</div>
+                    <a href="selassie-bio.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
